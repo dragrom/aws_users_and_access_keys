@@ -36,9 +36,9 @@ cd aws_users_and_access_keys
 
 ### Prerequisites
 
-Python: https://www.python.org/getit/
-Pip: https://pip.pypa.io/en/stable/installing/
-boto3 module: pip install boto3
+- Python: https://www.python.org/getit/
+- Pip: https://pip.pypa.io/en/stable/installing/
+- boto3 module: pip install boto3
 
 ### Usage
 
