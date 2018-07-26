@@ -9,7 +9,8 @@ end
 def aws_client(credentials)
     client = Aws::IAM::Client.new(
        access_key_id: credentials['aws_access_key_id'],
-       secret_access_key: credentials['aws_secret_access_key']
+       secret_access_key: credentials['aws_secret_access_key'],
+       region: 'us-east-1'
     )
     return client
 end
