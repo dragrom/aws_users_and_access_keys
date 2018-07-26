@@ -1,6 +1,6 @@
 # Project Title
 
-Get the available IAM users and their access key IDs from a given Amazon Web Services account
+Get the available IAM users and their access key IDs from a given Amazon Web Services account. For this project, I created 2 scripts: one in python and one in ruby. Boothe scripts return the same result, users can use any of them.
 
 ## License
 

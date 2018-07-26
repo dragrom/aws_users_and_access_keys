@@ -61,4 +61,5 @@ def generate_users_acceskeys_json():
     users_list = get_users_list(iam_client)
     print_json(get_users_keys(iam_client, users_list))
 
-generate_users_acceskeys_json()
+if __name__ == "__main__":
+    generate_users_acceskeys_json()
