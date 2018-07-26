@@ -36,9 +36,16 @@ cd aws_users_and_access_keys
 
 ### Prerequisites
 
-- Python: https://www.python.org/getit/
-- Pip: https://pip.pypa.io/en/stable/installing/
-- boto3 module: pip install boto3
+- If you want to use python script:
+  - Python: https://www.python.org/getit/
+  - Pip: https://pip.pypa.io/en/stable/installing/
+  - boto3 module: pip install boto3
+- If you want to use ruby script:
+  - ruby: 
+    - On Debian (Debian, Ubuntu): sudo apt-get install ruby-full
+    - On CentOS: sudo yum install ruby
+    - On OS X: brew install ruby
+  - aws-sdk gem: gem install aws-sdk
 
 ### Usage
 
@@ -51,7 +58,9 @@ Create credentials.json file, with the wollowing structure:
     "aws_secret_access_key": your_secret_key
 }
 ```
-Run the script, using the following command: python get_aws_users_keys.py
+Run the script, using the following command: 
+ - python script: python get_aws_users_keys.py
+ - ruby script: ruby get_aws_users_keys.rb
 
 The script will return an output like this:
 ```
@@ -70,8 +79,7 @@ The script will return an output like this:
 ```
 
 ### Coding style tests
-
-pylint get_aws_users_keys.py
+- For python: pylint get_aws_users_keys.py
 
 ```
 No config file found, using default configuration
@@ -79,10 +87,16 @@ No config file found, using default configuration
 --------------------------------------------------------------------
 Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 ```
+- For ruby: ruby -c get_aws_users_keys.rb 
+
+```
+Syntax OK
+```
 
 ## Built With
 
-This tool was built with Python 2.7.15rc1, using boto3 python mudule
+The python script was built with Python 2.7.15rc1, using boto3 python mudule
+The ruby script was build with ruby 2.5.1p57, using aws-sdk 
 
 ## Versioning
 
